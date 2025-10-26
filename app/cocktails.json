@@ -1,0 +1,385 @@
+[
+  {
+    "id": "bison-on-the-beach",
+    "name": "Bison on the Beach",
+    "tagline": "Trópusi, ananászos long drink Żubrówka Bison Grass vodkával.",
+    "imageName": "bison-on-the-beach",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Friss citromlé"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Kókusz szirup"
+      },
+      {
+        "amount": "80 ml",
+        "item": "Ananászlé"
+      },
+      {
+        "amount": "Felöntéshez",
+        "item": "Sprite"
+      }
+    ],
+    "preparation": "Töltsd meg a pohár háromnegyedét jéggel, add hozzá az összes hozzávalót (a Sprite kivételével) és keverd össze, majd töltsd fel Sprite-tal.",
+    "garnish": "Narancsdarabbal díszítve"
+  },
+  {
+    "id": "lime-bison",
+    "name": "Lime Bison",
+    "tagline": "Maracujás, narancsos koktél lime-mal és Cynarral.",
+    "imageName": "lime-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "5 ml",
+        "item": "Friss limelé"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Maracuja szörp"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Cynar keserű likőr"
+      },
+      {
+        "amount": "40 ml",
+        "item": "Friss narancslé"
+      }
+    ],
+    "preparation": "Tedd az összes hozzávalót egy shakerbe jégkockával és alaposan rázd össze.",
+    "garnish": "Narancsszeletekkel dekorálva"
+  },
+  {
+    "id": "bison-mojito",
+    "name": "Bison Mojito",
+    "tagline": "Mentás, lime-os long drink buborékos ásványvízzel.",
+    "imageName": "bison-mojito",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "50 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "1/2 db",
+        "item": "Lime"
+      },
+      {
+        "amount": "2 kanál",
+        "item": "Nádcukor"
+      },
+      {
+        "amount": "10-12 db",
+        "item": "Mentalevél"
+      },
+      {
+        "amount": "Felöntéshez",
+        "item": "Buborékos ásványvíz"
+      }
+    ],
+    "preparation": "A pohárba tedd a lime-ot a cukorral, nyomkodd össze a mentalevelekkel és a jéggel, add hozzá a vodkát, majd további tört jeget és ásványvizet.",
+    "garnish": "Mentalevelekkel díszítve"
+  },
+  {
+    "id": "bison-sour",
+    "name": "Bison Sour",
+    "tagline": "Klasszikus sour Żubrówkával és angosturával.",
+    "imageName": "bison-sour",
+    "glass": "Old fashioned",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "30 ml",
+        "item": "Cukorszirup"
+      },
+      {
+        "amount": "60 ml",
+        "item": "Lime- vagy citromlé"
+      },
+      {
+        "amount": "1 db",
+        "item": "Tojásfehérje"
+      },
+      {
+        "amount": "1-2 csepp",
+        "item": "Angostura bitter"
+      }
+    ],
+    "preparation": "Rázd össze a tojásfehérjét, a citruslevet, a cukorszirupot és az Angosturát, majd jéggel és Żubrówkával újra rázd össze és szűrd pohárba.",
+    "garnish": "Citromhéjjal vagy fahéjjal hintve"
+  },
+  {
+    "id": "bison-negroni",
+    "name": "Bison Negroni",
+    "tagline": "Fűszeres, keserű long drink Żubrówka vodkával.",
+    "imageName": "bison-negroni",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "40 ml",
+        "item": "Campari"
+      },
+      {
+        "amount": "40 ml",
+        "item": "Wermut Rosso"
+      }
+    ],
+    "preparation": "A highball poharat jéggel hűtsd le, majd öntsd bele a hozzávalókat és keverd össze jég nélkül.",
+    "garnish": "Narancshéjjal ill. fahéjrúddal"
+  },
+  {
+    "id": "aloe-bison",
+    "name": "Aloe Bison",
+    "tagline": "Mézes, aloe verás long drink lime-mal.",
+    "imageName": "aloe-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "1 evőkanál",
+        "item": "Méz"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Friss limelé"
+      },
+      {
+        "amount": "50 ml",
+        "item": "Aloe víz"
+      }
+    ],
+    "preparation": "Shakerben jéggel mixeld össze az összes hozzávalót, majd szűrd pohárba.",
+    "garnish": "Narancshéjjal díszítve"
+  },
+  {
+    "id": "apple-bison",
+    "name": "Apple Bison",
+    "tagline": "Almás, Cointreau-val gazdagított frissítő.",
+    "imageName": "apple-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "1/2 db",
+        "item": "Piros alma (héjjal)"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Friss limelé"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Cukorszirup"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Cointreau likőr"
+      }
+    ],
+    "preparation": "Az almát darabold fel, tedd a mixerbe tört jéggel, add hozzá a többi hozzávalót, és alacsony, majd magas fokozaton mixeld krémesre.",
+    "garnish": "Almaszeletekkel kínálva"
+  },
+  {
+    "id": "beauty-and-the-beast",
+    "name": "Beauty & the Beast",
+    "tagline": "Cideres long drink cukorsziruppal és almás díszítéssel.",
+    "imageName": "beauty-and-the-beast",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "50 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Cukorszirup"
+      },
+      {
+        "amount": "150 ml",
+        "item": "Cider"
+      }
+    ],
+    "preparation": "Töltsd meg a poharat jéggel, add hozzá a vodkát és a cukorszirupot, keverd össze, majd töltsd fel ciderrel.",
+    "garnish": "Almadarabokkal díszítve"
+  },
+  {
+    "id": "bison-from-the-orchard",
+    "name": "Bison from the Orchard",
+    "tagline": "Krémes, körteszirupos koktél Żubrówkával.",
+    "imageName": "bison-from-the-orchard",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "40 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Tejszín"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Friss limelé"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Körteszirup"
+      }
+    ],
+    "preparation": "Öntsd az összes hozzávalót shakerbe jégkockákkal, rázd össze, majd szűrd pohárba.",
+    "garnish": "Körtehéjjal díszítve"
+  },
+  {
+    "id": "milky-bison",
+    "name": "Milky Bison",
+    "tagline": "Fehércsokoládés, mézes desszertkoktél.",
+    "imageName": "milky-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "60 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "40 ml",
+        "item": "Fehércsokoládé krém halvával"
+      },
+      {
+        "amount": "30 ml",
+        "item": "Ananászlé"
+      },
+      {
+        "amount": "1 teáskanál",
+        "item": "Méz"
+      }
+    ],
+    "preparation": "Shakerben dolgozd össze a hozzávalókat egy kevés szezám- vagy dióolajjal, majd rázd össze és szűrd pohárba.",
+    "garnish": "Diódarabokkal szórd meg"
+  },
+  {
+    "id": "cafe-bison",
+    "name": "Cafe Bison",
+    "tagline": "Kávés koktél narancslekvárral és tojásfehérjével.",
+    "imageName": "cafe-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "60 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "10 ml",
+        "item": "Tojásfehérje"
+      },
+      {
+        "amount": "5 ml",
+        "item": "Friss lime"
+      },
+      {
+        "amount": "2 ml",
+        "item": "Kávé"
+      },
+      {
+        "amount": "2 db",
+        "item": "Magas kakaótartalmú csokoládé darab"
+      },
+      {
+        "amount": "1 teáskanál",
+        "item": "Narancslekvár"
+      }
+    ],
+    "preparation": "Az összes hozzávalót shakerben rázd össze 10-15 másodpercig, adj hozzá jeget, majd ismét rázd és szűrd pohárba.",
+    "garnish": "Reszelt csokoládéval és narancshéjjal"
+  },
+  {
+    "id": "cherry-bison",
+    "name": "Cherry Bison",
+    "tagline": "Meggylekváros, fekete teás long drink.",
+    "imageName": "cherry-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "60 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "40 ml",
+        "item": "Fekete tea esszencia"
+      },
+      {
+        "amount": "3 teáskanál",
+        "item": "Meggylekvár"
+      },
+      {
+        "amount": "15 ml",
+        "item": "Cukorszirup"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Citromlé"
+      },
+      {
+        "amount": "Csipet",
+        "item": "Rozmaring"
+      }
+    ],
+    "preparation": "A hozzávalókat (a narancshéj kivételével) shakerben rázd össze, majd szűrd pohárba.",
+    "garnish": "Narancshéjjal a pohár peremén"
+  },
+  {
+    "id": "smoky-bison",
+    "name": "Smoky Bison",
+    "tagline": "Füstös, grapefruit teás koktél rózsaszín pezsgővel.",
+    "imageName": "smoky-bison",
+    "glass": "Highball",
+    "ingredients": [
+      {
+        "amount": "50 ml",
+        "item": "Żubrówka Bison Grass vodka"
+      },
+      {
+        "amount": "20 ml",
+        "item": "Cinzano Rosé pezsgő"
+      },
+      {
+        "amount": "30 ml",
+        "item": "Grapefruit tea"
+      },
+      {
+        "amount": "1 cl",
+        "item": "Smoky Funkin ízesített szirup"
+      },
+      {
+        "amount": "Néhány darab",
+        "item": "Lime"
+      }
+    ],
+    "preparation": "A hozzávalókat shakerben jéggel rázd össze, majd szűrd pohárba.",
+    "garnish": "Lime-darabokkal tálalva"
+  }
+]
