@@ -1,15 +1,16 @@
 package com.example.coctails.ui
 
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
@@ -27,18 +28,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import com.example.coctails.data.Cocktail
 import com.example.coctails.data.CocktailRepository
 import com.example.coctails.data.Ingredient
-import java.util.Locale
 import kotlinx.coroutines.delay
 
 @Composable
@@ -111,8 +109,6 @@ private fun CocktailCard(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val imageResId = rememberCocktailDrawableId(cocktail.imageName)
-
     Card(
         onClick = onClick,
         shape = MaterialTheme.shapes.medium,
@@ -122,42 +118,27 @@ private fun CocktailCard(
         ),
         modifier = modifier
             .fillMaxWidth()
-            .aspectRatio(3f / 4f)
+            .aspectRatio(0.75f)
     ) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp),
-            verticalArrangement = Arrangement.spacedBy(12.dp),
+            verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            if (imageResId != 0) {
-                Image(
-                    painter = painterResource(id = imageResId),
-                    contentDescription = cocktail.name,
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .aspectRatio(3f / 4f)
-                )
-            }
-
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                Text(
-                    text = cocktail.name,
-                    style = MaterialTheme.typography.titleMedium,
-                    textAlign = TextAlign.Center,
-                    fontWeight = FontWeight.SemiBold
-                )
-                Text(
-                    text = cocktail.tagline,
-                    style = MaterialTheme.typography.bodyMedium,
-                    textAlign = TextAlign.Center
-                )
-            }
+            Text(
+                text = cocktail.name,
+                style = MaterialTheme.typography.titleMedium,
+                textAlign = TextAlign.Center,
+                fontWeight = FontWeight.SemiBold
+            )
+            Spacer(modifier = Modifier.height(8.dp))
+            Text(
+                text = cocktail.tagline,
+                style = MaterialTheme.typography.bodyMedium,
+                textAlign = TextAlign.Center
+            )
         }
     }
 }
@@ -167,7 +148,6 @@ private fun CocktailDetailDialog(
     cocktail: Cocktail,
     onDismiss: () -> Unit
 ) {
-    val imageResId = rememberCocktailDrawableId(cocktail.imageName)
     Dialog(onDismissRequest = onDismiss) {
         LaunchedEffect(cocktail) {
             delay(20_000)
@@ -187,16 +167,6 @@ private fun CocktailDetailDialog(
                     .padding(24.dp),
                 verticalArrangement = Arrangement.spacedBy(16.dp)
             ) {
-                if (imageResId != 0) {
-                    Image(
-                        painter = painterResource(id = imageResId),
-                        contentDescription = cocktail.name,
-                        contentScale = ContentScale.Crop,
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .aspectRatio(3f / 4f)
-                    )
-                }
                 Text(
                     text = cocktail.name,
                     style = MaterialTheme.typography.headlineSmall,
@@ -267,24 +237,5 @@ private fun CocktailCardPreview() {
     )
     com.example.coctails.ui.theme.CoctailsTheme {
         CocktailCard(cocktail = sample, onClick = {})
-    }
-}
-
-@Composable
-private fun rememberCocktailDrawableId(imageName: String): Int {
-    val context = LocalContext.current
-    val candidates = remember(imageName) {
-        buildList {
-            add(imageName)
-            add(imageName.lowercase(Locale.ROOT))
-            add(imageName.replace('-', '_'))
-            add(imageName.replace('-', '_').lowercase(Locale.ROOT))
-        }.distinct()
-    }
-    return remember(candidates, context) {
-        val resources = context.resources
-        candidates.firstNotNullOfOrNull { candidate ->
-            resources.getIdentifier(candidate, "drawable", context.packageName).takeIf { it != 0 }
-        } ?: 0
     }
 }
